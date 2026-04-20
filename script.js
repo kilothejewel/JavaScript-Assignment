@@ -26,10 +26,10 @@ function gradeTest(score) {
 
 //Question 2
 
-function typeConversion(value) {
+function typeConversion() {
     
-    let value = prompt("Enter a value:");
-    let numberValue = Number(value);
+    let userInput = prompt("Enter a value:");
+    let numberValue = Number(userInput);
 
     const testValues = [0, "", "hello", null, undefined, NaN];
 
@@ -65,9 +65,9 @@ const post = {
     }
 };
 
-console.log('Likes before:$post.likes');
+console.log(`Likes before: ${post.likes}`);
 post.addLike(); // Output: Post liked! Total likes: 151
-console.log('Likes after:$post.likes');
+console.log(`Likes after: ${post.likes}`);
 
 const { username, caption} = post;
 console.log(`Username: ${username}, Caption: ${caption}`);
@@ -82,7 +82,7 @@ console.log(combinedArray); // Output: [1, 2, 3, 4, 5, 6]
 let rows = 5;
 for (let i = 1; i <= rows; i++) {
     let spaces = ' '.repeat(rows - i);
-    let stars = '*'.repeat(i);
+    let stars = '* '.repeat(i);
     console.log(spaces + stars);
 }
 
